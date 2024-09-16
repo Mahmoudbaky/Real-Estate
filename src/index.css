@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.xs-design {
+  @media (min-width: 320px) {
+    align-items: end;
+  }
+}

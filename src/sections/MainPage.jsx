@@ -1,0 +1,48 @@
+import React from "react";
+import luxury_home from "../assets/luxury_home.jpg";
+
+const MainPage = () => {
+  const parentStyle = {
+    backgroundImage: `url(${luxury_home})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover", // Adjust as needed (cover, contain, etc.)
+    backgroundColor: "black", // Fallback color if the image doesn't load
+    minHeight: "100vh", // Ensure the background covers the entire viewport
+    // opacity: 0.9, // Adjust the opacity of the background image
+  };
+
+  const overLay = {
+    minHeight: "100vh",
+    backgroundColor: "rgba(0, 0, 0, 0.35)", // Adjust the opacity of the overlay
+  };
+
+  return (
+    <section id="MainPage" style={parentStyle}>
+      <div style={overLay}>
+        <div className="flex items-start justify-center h-screen mx-10 text-white grid-rows-3">
+          <div className="flex flex-col  mt-[200px] xl:items-center md:items-center sm:items-end xs-design">
+            <span className="text-white text-2xl">
+              مرحبا بكم في شركة رمز القيمة للتقييم العقاري​
+            </span>
+            <br />
+            <h1 className="text-6xl font-semibold  xl:items-center md:items-center sm:items-end xs-design text-wrap">
+              فاليو كود مرجعك للتقييم
+            </h1>
+            <br />
+            <p className="flex flex-col  mt-5 xl:items-center md:items-center sm:items-end">
+              <span>
+                المملكة العربية السعودية ذات تاريخ عريق قديم الأزل قدمها
+                وعراقتها لا تلغي أنها تتمتع بتطور وحداثة وتجدد يقوم على رؤية
+                واضحة تعكس
+              </span>
+              مقوماتها المتعددة الاقتصادية والبيئية والثروات النفطية و التقدم
+              العمراني والسكاني
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default MainPage;
