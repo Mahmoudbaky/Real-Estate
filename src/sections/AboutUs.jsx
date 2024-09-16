@@ -4,7 +4,7 @@ import real_estate from "../assets/real_estate.jpg";
 const AboutUs = () => {
   return (
     <section id="AbourUs" className="bg-[#bddae2] ">
-      <div className="md:py-[80] py-16 flex mx-auto sm:flex-row flex-col">
+      <div className="md:py-[80] py-16 flex mx-auto sm:flex-row flex-col p-5">
         <div id="about-us-image" className="basis-[45%] flex justify-center">
           <img
             src={real_estate}

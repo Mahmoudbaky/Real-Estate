@@ -1,5 +1,6 @@
 import React from "react";
 import WhatsAppBtn from "../components/WhatsAppBtn";
+import WhatsAppBtn2 from "../components/WhatsAppBtn2";
 import Home_2 from "../assets/Home_2.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
@@ -39,6 +40,7 @@ const NavBar = () => {
           <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
             الصفحة الرئيسية
           </li>
+          <WhatsAppBtn2 />
         </div>
 
         <div className="hidden xl:block">
