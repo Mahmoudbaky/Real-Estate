@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <BrowserRouter>
       <nav
-        className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-black py-6 px-8 bg-white md:px-32 drop-shadow-md fixed"
+        className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-black py-6 px-8 bg-white md:px-32 drop-shadow-md "
         dir="rtl"
       >
         <i
