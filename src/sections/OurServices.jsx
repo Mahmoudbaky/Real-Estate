@@ -13,7 +13,7 @@ const OurServices = () => {
       <div id="OurServices" className="my-11 border-b-2 border-black">
         <h1 className="text-2xl font-semibold py-3">خدماتنا</h1>
       </div>
-      <ul className=" my-10 flex sm:flex-row gap-28 mb-20 flex-col">
+      <ul className="max-w-[800px] my-10 flex sm:flex-row gap-28 mb-20 flex-col">
         <li className="flex flex-col items-center cursor-pointer hover:text-[#2cc3c3] transition-all">
           <div class="border-[#2cc3c3] border-4 rounded-full w-20 h-20 transition-all text-white bg-[#2cc3c3] flex items-center justify-center text-3xl hover:bg-white hover:text-[#2cc3c3]">
             <LuFileSearch />

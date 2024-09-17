@@ -16,7 +16,7 @@ const RealEstate = () => {
             أهم أغراض التقييم
           </h1>
         </div>
-        <ul className="w-[800px] my-10 flex sm:flex-row gap-28 mb-20 flex-col flex-wrap justify-center">
+        <ul className="max-w-[800px] my-10 flex sm:flex-row gap-28 mb-20 flex-col flex-wrap justify-center">
           <li className="text-white flex flex-col items-center cursor-pointer  transition-all">
             <div class="border-white border-4 rounded-full w-20 h-20 transition-all text-white bg-[#2cc3c3] flex items-center justify-center text-3xl hover:bg-white hover:text-[#2cc3c3]">
               <FaCalculator />

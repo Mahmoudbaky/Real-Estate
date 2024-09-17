@@ -12,10 +12,7 @@ const NavBar = () => {
 
   return (
     <BrowserRouter>
-      <nav
-        className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-black py-6 px-8 bg-white md:px-32 drop-shadow-md "
-        dir="rtl"
-      >
+      <nav className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-black py-6 px-8 bg-white md:px-32 drop-shadow-md fixed">
         <i
           className="xl:hidden block text-5xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
@@ -46,10 +43,18 @@ const NavBar = () => {
           <WhatsAppBtn2 />
         </div>
 
-        <div className="hidden xl:block">
-          <WhatsAppBtn />
-        </div>
-        <ul className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base">
+        <Link to="#MainPage" smooth>
+          <img
+            src={Home_2}
+            alt="home"
+            className="w-[50px] h-[50px] hover:scale-75 transition-all"
+          />
+        </Link>
+
+        <ul
+          className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base"
+          dir="rtl"
+        >
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             اتصل بنا
           </li>
@@ -74,13 +79,10 @@ const NavBar = () => {
             </li>
           </Link>
         </ul>
-        <Link to="#MainPage" smooth>
-          <img
-            src={Home_2}
-            alt="home"
-            className="w-[50px] h-[50px] hover:scale-75 transition-all"
-          />
-        </Link>
+
+        <div className="hidden xl:block">
+          <WhatsAppBtn />
+        </div>
       </nav>
     </BrowserRouter>
   );
