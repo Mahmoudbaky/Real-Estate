@@ -4,16 +4,14 @@ import { MdOutlineContentPasteSearch } from "react-icons/md";
 import { TbUserSearch } from "react-icons/tb";
 import { LuFileSearch } from "react-icons/lu";
 
-import Home_2 from "../assets/Home_2.png";
-
 const OurServices = () => {
   return (
     <section
       id="OurServices"
       className="max-w-[1320px] flex flex-col justify-center items-center mx-auto"
     >
-      <div id="OurServices" className="my-11 ">
-        <h1 className="text-2xl font-semibold">خدماتنا</h1>
+      <div id="OurServices" className="my-11 border-b-2 border-black">
+        <h1 className="text-2xl font-semibold py-3">خدماتنا</h1>
       </div>
       <ul className=" my-10 flex sm:flex-row gap-28 mb-20 flex-col">
         <li className="flex flex-col items-center cursor-pointer hover:text-[#2cc3c3] transition-all">

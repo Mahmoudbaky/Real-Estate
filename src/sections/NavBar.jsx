@@ -12,7 +12,10 @@ const NavBar = () => {
 
   return (
     <BrowserRouter>
-      <nav className="flex justify-between items-center text-black py-6 px-8 bg-white md:px-32 drop-shadow-md sticky">
+      <nav
+        className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-black py-6 px-8 bg-white md:px-32 drop-shadow-md fixed"
+        dir="rtl"
+      >
         <i
           className="xl:hidden block text-5xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
@@ -46,14 +49,15 @@ const NavBar = () => {
         <div className="hidden xl:block">
           <WhatsAppBtn />
         </div>
-        <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
+        <ul className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base">
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             اتصل بنا
           </li>
-
-          <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
-            التقييم العقاري
-          </li>
+          <Link to="#RealEstate" smooth>
+            <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
+              التقييم العقاري
+            </li>
+          </Link>
           <Link to="#OurServices" smooth>
             <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
               خدماتنا

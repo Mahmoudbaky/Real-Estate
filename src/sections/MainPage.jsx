@@ -19,13 +19,16 @@ const MainPage = () => {
   return (
     <section id="MainPage" style={parentStyle}>
       <div style={overLay}>
-        <div className="flex items-start justify-center h-screen mx-10 text-white grid-rows-3">
-          <div className="flex flex-col  mt-[200px] xl:items-center md:items-center sm:items-end xs-design">
+        <div className="flex items-start justify-center h-screen mx-10 text-white">
+          <div
+            className="flex flex-col  mt-[300px] xl:items-center md:items-center"
+            dir="rtl"
+          >
             <span className="text-white text-2xl">
               مرحبا بكم في شركة رمز القيمة للتقييم العقاري​
             </span>
             <br />
-            <h1 className="text-6xl font-semibold  xl:items-center md:items-center sm:items-end xs-design text-wrap">
+            <h1 className="text-6xl font-semibold  xl:items-center md:items-center sm:items-end  text-wrap">
               فاليو كود مرجعك للتقييم
             </h1>
             <br />
