@@ -13,7 +13,7 @@ const MainPage = () => {
 
   const overLay = {
     minHeight: "100vh",
-    backgroundColor: "rgba(0, 0, 0, 0.35)", // Adjust the opacity of the overlay
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust the opacity of the overlay
   };
 
   return (
@@ -21,15 +21,15 @@ const MainPage = () => {
       <div style={overLay}>
         <div className="flex items-start justify-center h-screen mx-10 text-white">
           <div
-            className="flex flex-col  mt-[300px] xl:items-center md:items-center"
+            className=" flex flex-col  mt-[300px] xl:items-center md:items-center"
             dir="rtl"
           >
-            <span className="text-white text-2xl">
-              مرحبا بكم في شركة رمز القيمة للتقييم العقاري​
+            <span className=" text-2xl">
+              مرحبا بكم في شركة مداخيل للأصول العقارية
             </span>
             <br />
             <h1 className="text-6xl font-semibold  xl:items-center md:items-center sm:items-end  text-wrap">
-              فاليو كود مرجعك للتقييم
+              مداخيل مرجعك للتقييم العقاري
             </h1>
             <br />
             <p className="flex flex-col  mt-5 xl:items-center md:items-center sm:items-end">

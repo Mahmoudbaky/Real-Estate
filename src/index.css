@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.xs-design {
-  @media (min-width: 320px) {
-    align-items: end;
-  }
+@font-face {
+  font-family: "CustomFont";
+  src: url("src/assets/fonts/MSjawhara-Bold.ttf");
+}
+
+body {
+  font-family: "CustomFont", sans-serif;
 }

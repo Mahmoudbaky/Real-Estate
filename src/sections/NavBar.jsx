@@ -6,13 +6,23 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+import Madakheel from "../assets/Madakheel.png";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
   return (
     <BrowserRouter>
-      <nav className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-black py-6 px-8 bg-white md:px-32 drop-shadow-md fixed">
+      <nav
+        className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-gray-700 py-6 px-8 bg-white md:px-32 drop-shadow-md fixed"
+        dir="rtl"
+      >
         <i
           className="xl:hidden block text-5xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
@@ -25,39 +35,47 @@ const NavBar = () => {
           ${isOpen ? "opacity-100" : "opacity-0"}`}
           style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
         >
-          <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
-            اتصل بنا
-          </li>
-          <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
-            التقييم العقاري
-          </li>
-          <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
-            خدماتنا
-          </li>
-          <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
-            من نحن
-          </li>
-          <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
-            الصفحة الرئيسية
-          </li>
+          <Link to="#AboutUs" smooth>
+            <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
+              اتصل بنا
+            </li>
+          </Link>
+          <Link to="#RealEstate" smooth>
+            <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
+              التقييم العقاري
+            </li>
+          </Link>
+          <Link to="#OurServices" smooth>
+            <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
+              خدماتنا
+            </li>
+          </Link>
+          <Link to="#AbourUs" smooth>
+            <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
+              من نحن
+            </li>
+          </Link>
+          <Link to="#MainPage" smooth>
+            <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
+              الصفحة الرئيسية
+            </li>
+          </Link>
           <WhatsAppBtn2 />
         </div>
 
-        <Link to="#MainPage" smooth>
-          <img
-            src={Home_2}
-            alt="home"
-            className="w-[50px] h-[50px] hover:scale-75 transition-all"
-          />
-        </Link>
+        <div className="hidden xl:block">
+          <WhatsAppBtn />
+        </div>
 
         <ul
           className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base"
           dir="rtl"
         >
-          <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
-            اتصل بنا
-          </li>
+          <Link to="#AboutUs" smooth>
+            <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
+              اتصل بنا
+            </li>
+          </Link>
           <Link to="#RealEstate" smooth>
             <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
               التقييم العقاري
@@ -80,9 +98,13 @@ const NavBar = () => {
           </Link>
         </ul>
 
-        <div className="hidden xl:block">
-          <WhatsAppBtn />
-        </div>
+        <Link to="#MainPage" smooth>
+          <img
+            src={Madakheel}
+            alt="home"
+            className="w-[100px] h-[100px] hover:scale-75 transition-all"
+          />
+        </Link>
       </nav>
     </BrowserRouter>
   );
