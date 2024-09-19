@@ -15,7 +15,7 @@ const ContactUs = () => {
         >
           <span className=" border-b-2 border-black py-3"> تواصل معنا </span>
           <h1 className=" text-2xl font-semibold py-1 text-pretty">
-            اطلب خدماتنا{" "}
+            اطلب خدماتنا
           </h1>
 
           <p className=" py-2 text-pretty">
@@ -24,7 +24,7 @@ const ContactUs = () => {
             او عن طريق الايميل او من خلال نموذج الطلب ونعدكم بتجربة مميزة
           </p>
 
-          <ul className="flex flex-row gap-24">
+          <ul className="flex flex-row gap-12 flex-wrap items-center">
             <li className="flex items-center gap-4">
               <div class="border-[#2cc3c3] border-4 rounded-full w-12 h-12 transition-all text-white bg-[#2cc3c3] flex items-center justify-center text-xl hover:bg-white hover:text-[#2cc3c3]">
                 <FaPhone />

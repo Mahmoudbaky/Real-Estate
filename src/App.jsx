@@ -7,6 +7,7 @@ import {
   RealEstate,
   OurServices,
   ContactUs,
+  OurLocation,
   OurRecords,
 } from "./sections";
 
@@ -19,9 +20,8 @@ const App = () => {
       <OurServices />
       <RealEstate />
       <ContactUs />
-      {/* 
-      
-      <OurRecords /> */}
+      <OurLocation />
+      {/* <OurRecords /> */}
     </div>
   );
 };
