@@ -9,6 +9,8 @@ import {
   Footer,
 } from "../sections";
 
+import NavAlt from "../components/NavAlt";
+
 const Home = () => {
   return (
     <div>

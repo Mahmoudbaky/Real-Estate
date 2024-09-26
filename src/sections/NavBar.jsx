@@ -30,8 +30,8 @@ const NavBar = () => {
       </i>
 
       <div
-        className={`absolute xl:hidden top-24 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform py-6
-          ${isOpen ? "opacity-100" : "opacity-0"}`}
+        className={`absolute xl:hidden top-24 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform py-6 
+          ${isOpen ? " block" : "-translate-y-full transition-all hidden"}`}
         style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
       >
         <Link to="#AboutUs" smooth>
@@ -119,3 +119,5 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+//  opacity-0
