@@ -10,9 +10,11 @@ import {
 } from "../sections";
 
 import NavAlt from "../components/NavAlt";
+import AnimatedPage from "../components/AnimatedPage";
 
 const Home = () => {
   return (
+    // <AnimatedPage>
     <div>
       <NavBar />
       <MainPage />
@@ -22,6 +24,7 @@ const Home = () => {
       <ContactUs />
       <Footer />
     </div>
+    // </AnimatedPage>
   );
 };
 

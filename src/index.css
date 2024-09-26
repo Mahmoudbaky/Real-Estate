@@ -10,3 +10,7 @@
 body {
   font-family: "CustomFont", sans-serif;
 }
+
+#OrderNow {
+  width: stretch;
+}
