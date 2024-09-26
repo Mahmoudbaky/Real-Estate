@@ -6,3 +6,5 @@ export { default as OurServices } from "./OurServices.jsx";
 export { default as ContactUs } from "./ContactUs.jsx";
 export { default as OurRecords } from "./OurRecords.jsx";
 export { default as OurLocation } from "./OurLocation.jsx";
+export { default as ContactInfo } from "./ContactInfo.jsx";
+export { default as Footer } from "./Footer.jsx";

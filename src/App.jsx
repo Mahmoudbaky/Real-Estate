@@ -1,28 +1,29 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import {
-  NavBar,
-  MainPage,
-  AboutUs,
-  RealEstate,
-  OurServices,
-  ContactUs,
-  OurLocation,
-  OurRecords,
-} from "./sections";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home, Blog, OrderNow, OurOffers } from "./pages";
 
 const App = () => {
   return (
-    <div>
-      <NavBar />
-      <MainPage />
-      <AboutUs />
-      <OurServices />
-      <RealEstate />
-      <ContactUs />
-      <OurLocation />
-      {/* <OurRecords /> */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          index
+          element={
+            <div>
+              <Home />
+            </div>
+          }
+        />
+        <Route
+          path="/OrderNow"
+          element={
+            <div>
+              <OrderNow />
+            </div>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

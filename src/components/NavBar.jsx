@@ -5,7 +5,8 @@ import Home_2 from "../assets/Home_2.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+// import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import Madakheel from "../assets/Madakheel.png";
 
 const NavBar = () => {
@@ -70,44 +71,44 @@ const NavBar = () => {
         className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base"
         dir="rtl"
       >
-        <Link to="#Blog" smooth>
+        <Link to="#/" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             بلوج
           </li>
         </Link>
-        <Link to="#AboutUs" smooth>
+        <Link to="/" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             اتصل بنا
           </li>
         </Link>
-        <Link to="#RealEstate" smooth>
+        <Link to="/" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             التقييم العقاري
           </li>
         </Link>
-        <Link to="#OurOffers" smooth>
+        <Link to="/" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             عروضنا
           </li>
         </Link>
-        <Link to="#OurServices" smooth>
+        <Link to="/" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             خدماتنا
           </li>
         </Link>
-        <Link to="#AbourUs" smooth>
+        <Link to="/" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             من نحن
           </li>
         </Link>
-        <Link to="#MainPage" smooth>
+        <Link to="/" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             الصفحة الرئيسية
           </li>
         </Link>
       </ul>
 
-      <Link to="#MainPage" smooth>
+      <Link to="/" smooth>
         <img
           src={Madakheel}
           alt="home"

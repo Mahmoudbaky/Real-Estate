@@ -1,5 +1,7 @@
 import React from "react";
-import makkah from "../assets/makkah.jpg";
+import Madakheel_img from "../assets/Madakheel_img.png";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -17,13 +19,11 @@ const ContactUs = () => {
           <h1 className=" text-2xl font-semibold py-1 text-pretty">
             اطلب خدماتنا
           </h1>
-
           <p className=" py-2 text-pretty">
             نسعد بتقديم أفضل الخدمات اليكم من خلال الاتصال بنا على الرقم الموحد
             <br />
             او عن طريق الايميل او من خلال نموذج الطلب ونعدكم بتجربة مميزة
           </p>
-
           <ul className="flex flex-row gap-12 flex-wrap items-center">
             <li className="flex items-center gap-4">
               <div class="border-[#2cc3c3] border-4 rounded-full w-12 h-12 transition-all text-white bg-[#2cc3c3] flex items-center justify-center text-xl hover:bg-white hover:text-[#2cc3c3]">
@@ -45,10 +45,20 @@ const ContactUs = () => {
               </div>
             </li>
           </ul>
+
+          <Link to="/OrderNow">
+            <button className="bg-[#2cc3c3] border-2 shadow-md shadow-current transition-all text-white py-2 px-4 rounded-lg mt-5 hover:bg-white hover:text-[#2cc3c3]">
+              اطلب الان
+            </button>
+          </Link>
         </div>
 
         <div id="about-us-image" className="basis-[45%] flex justify-center">
-          <img src={makkah} alt="about us" className="rounded-lg w-[450px]" />
+          <img
+            src={Madakheel_img}
+            alt="about us"
+            className="rounded-lg w-[450px]"
+          />
         </div>
       </div>
     </section>
