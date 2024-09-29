@@ -1,6 +1,7 @@
 import React from "react";
 import { ContactInfo, OurLocation, Footer } from "../sections";
 import NavBar from "../components/NavBar";
+import { useEffect } from "react";
 
 // import AnimatedPage from "../components/AnimatedPage";
 
