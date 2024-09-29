@@ -5,9 +5,9 @@ import NavBar from "../components/NavBar";
 // import AnimatedPage from "../components/AnimatedPage";
 
 const OrderNow = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     // <AnimatedPage>
