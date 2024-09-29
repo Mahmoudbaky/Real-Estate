@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ContactInfo, OurLocation, Footer } from "../sections";
 import NavBar from "../components/NavBar";
-import { useEffect } from "react";
-import AnimatedPage from "../components/AnimatedPage";
+
+// import AnimatedPage from "../components/AnimatedPage";
 
 const OrderNow = () => {
   // useEffect(() => {
