@@ -12,7 +12,7 @@ const OrderNow = () => {
 
   return (
     // <AnimatedPage>
-    <section id="OrderNow" className="relative">
+    <section id="OrderNow">
       <NavBar />
       <ContactInfo />
       <OurLocation />
