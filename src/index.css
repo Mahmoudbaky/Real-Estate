@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "CustomFont";
-  src: url("src/assets/fonts/MSjawhara-Bold.ttf");
+  src: url("public/fonts/MSjawhara-Bold.ttf");
 }
 
 body {
