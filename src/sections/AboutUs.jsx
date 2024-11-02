@@ -15,7 +15,7 @@ const AboutUs = () => {
           className="basis-[55%] px-10 py-5 flex flex-col justify-center items-center xl:items-start md:items-start sm:items-start gap-5"
           dir="rtl"
         >
-          <span className="text-white border-b-2 border-white py-3">
+          <span className="text-white border-b-2  border-white py-3">
             من نحن
           </span>
           <h1 className="text-white text-2xl font-semibold py-1 text-pretty">

@@ -5,6 +5,8 @@ import { TbUserSearch } from "react-icons/tb";
 import { LuFileSearch } from "react-icons/lu";
 import { FaBullhorn } from "react-icons/fa";
 import { FaHandshakeSimple } from "react-icons/fa6";
+import { RiAuctionLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const OurServices = () => {
   return (
@@ -52,6 +54,14 @@ const OurServices = () => {
           </div>
           <h1 className="mt-5">تقييم الأصول العقارية</h1>
         </li>
+        <Link to="Auctions">
+          <li className="flex flex-col items-center cursor-pointer hover:text-[#2cc3c3] transition-all">
+            <div class="border-[#2cc3c3] border-4 rounded-full w-20 h-20 transition-all text-white bg-[#2cc3c3] flex items-center justify-center text-3xl hover:bg-white hover:text-[#2cc3c3]">
+              <RiAuctionLine />
+            </div>
+            <h1 className="mt-5"> المزادات العقارية</h1>
+          </li>
+        </Link>
       </ul>
     </section>
   );

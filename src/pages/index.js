@@ -2,3 +2,8 @@ export { default as Home } from "./Home.jsx";
 export { default as OrderNow } from "./OrderNow.jsx";
 export { default as OurOffers } from "./OurOffers.jsx";
 export { default as Blog } from "./Blog.jsx";
+export { default as DevWork } from "./DevWork.jsx";
+export { default as ManageServices } from "./ManageServices.jsx";
+export { default as AccountantServices } from "./AccountantServices.jsx";
+export { default as TechServices } from "./TechServices.jsx";
+export { default as Auctions } from "./Auctions.jsx";

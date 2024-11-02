@@ -6,3 +6,7 @@
   font-family: "CustomFont";
   src: url("src/assets/fonts/MSjawhara-Bold.ttf");
 }
+
+body {
+  font-family: "CustomFont";
+}

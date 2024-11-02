@@ -19,7 +19,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-gray-700 py-6 px-8 bg-white md:px-32 drop-shadow-md fixed"
+      className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-gray-700 py-6 px-8 bg-white md:px-32 z-10 drop-shadow-md fixed"
       dir="rtl"
     >
       <i
@@ -70,11 +70,11 @@ const NavBar = () => {
         className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base"
         dir="rtl"
       >
-        <Link to="#Blog" smooth>
+        {/* <Link to="#Blog" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             بلوج
           </li>
-        </Link>
+        </Link> */}
         <Link to="#AboutUs" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             اتصل بنا
@@ -85,11 +85,11 @@ const NavBar = () => {
             التقييم العقاري
           </li>
         </Link>
-        <Link to="#OurOffers" smooth>
+        {/* <Link to="#OurOffers" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             عروضنا
           </li>
-        </Link>
+        </Link> */}
         <Link to="#OurServices" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             خدماتنا
