@@ -7,3 +7,6 @@ export { default as ManageServices } from "./ManageServices.jsx";
 export { default as AccountantServices } from "./AccountantServices.jsx";
 export { default as TechServices } from "./TechServices.jsx";
 export { default as Auctions } from "./Auctions.jsx";
+export { default as Advice } from "./Advice.jsx";
+export { default as Markting } from "./Markting.jsx";
+export { default as Rating } from "./Rating.jsx";

@@ -10,6 +10,9 @@ import {
   AccountantServices,
   TechServices,
   Auctions,
+  Advice,
+  Markting,
+  Rating,
 } from "./pages";
 
 const App = () => {
@@ -71,6 +74,33 @@ const App = () => {
           element={
             <div>
               <Auctions />
+            </div>
+          }
+        />
+
+        <Route
+          path="/Advice"
+          element={
+            <div>
+              <Advice />
+            </div>
+          }
+        />
+
+        <Route
+          path="/Markting"
+          element={
+            <div>
+              <Markting />
+            </div>
+          }
+        />
+
+        <Route
+          path="/Rating"
+          element={
+            <div>
+              <Rating />
             </div>
           }
         />
