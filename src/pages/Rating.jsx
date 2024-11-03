@@ -16,7 +16,7 @@ const Rating = () => {
     <section id="Rating">
       <NavBar />
       <div
-        className="flex flex-col justify-center items-center p-6 md:p-12 lg:p-10  max-w-[90%] mx-auto mt-0"
+        className="flex flex-col justify-center items-center p-6 my-11 md:p-12 lg:p-10  max-w-[90%] mx-auto mt-0"
         dir="rtl"
       >
         {/* Title */}
