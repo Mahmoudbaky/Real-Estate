@@ -13,10 +13,10 @@ const Rating = () => {
     "https://img.freepik.com/free-photo/front-view-businessman-with-wooden-building-blocks_23-2148780640.jpg?t=st=1730325512~exp=1730329112~hmac=397356d392d8662f48e75b3cb175ead12d3e42e6b5d9c8d3e71407133e8ebaca&w=1060";
 
   return (
-    <section id="Rating">
+    <section id="Rating" className="min-h-screen flex flex-col">
       <NavBar />
       <div
-        className="flex flex-col justify-center items-center p-6  md:p-12 lg:p-10  max-w-[90%] mx-auto mt-0"
+        className="flex flex-col justify-center items-center p-6 flex-grow md:p-12 lg:p-10  max-w-[90%] mx-auto mt-0"
         dir="rtl"
       >
         {/* Title */}
