@@ -1,5 +1,6 @@
 import React from "react";
 import luxury_home from "../assets/luxury_home.jpg";
+import { NavBar } from "../sections";
 
 const MainPage = () => {
   const parentStyle = {
@@ -19,7 +20,8 @@ const MainPage = () => {
   return (
     <section id="MainPage" style={parentStyle}>
       <div style={overLay}>
-        <div className="flex items-start justify-center h-screen mx-10 text-white">
+        <NavBar />
+        <div className="flex items-start justify-center h-screen mx-10 text-white ">
           <div
             className=" flex flex-col  mt-[300px] xl:items-center md:items-center"
             dir="rtl"
@@ -33,7 +35,7 @@ const MainPage = () => {
             </h1>
             <br />
             <p className="flex flex-col  mt-5 xl:items-center md:items-center sm:items-end">
-              <span>
+              <span className="text-justify">
                 المملكة العربية السعودية ذات تاريخ عريق قديم الأزل قدمها
                 وعراقتها لا تلغي أنها تتمتع بتطور وحداثة وتجدد يقوم على رؤية
                 واضحة تعكس

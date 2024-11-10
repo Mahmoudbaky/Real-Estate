@@ -22,7 +22,7 @@ const Home = () => {
   return (
     // <AnimatedPage>
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <MainPage />
       <AboutUs />
       <OurServices />

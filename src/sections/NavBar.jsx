@@ -19,7 +19,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-gray-700 py-6 px-8 bg-white md:px-32 z-10 drop-shadow-md fixed"
+      className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-white py-14 border-b-[1px] border-gray-800 px-8 bg-transparent md:px-32 z-10 drop-shadow-md "
       dir="rtl"
     >
       <i
@@ -30,7 +30,7 @@ const NavBar = () => {
       </i>
 
       <div
-        className={`absolute xl:hidden top-24 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform py-6 
+        className={`absolute xl:hidden top-20 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform py-6 
           ${isOpen ? " block" : "-translate-y-full transition-all hidden"}`}
         style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
       >
@@ -67,7 +67,7 @@ const NavBar = () => {
       </div>
 
       <ul
-        className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base"
+        className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base "
         dir="rtl"
       >
         {/* <Link to="#Blog" smooth>
@@ -111,7 +111,7 @@ const NavBar = () => {
         <img
           src={Madakheel}
           alt="home"
-          className="w-[100px] h-[100px] hover:scale-75 transition-all"
+          className="w-[130px] h-[130px] hover:scale-75 transition-all"
         />
       </Link>
     </nav>
