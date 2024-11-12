@@ -19,30 +19,33 @@ const MainPage = () => {
 
   return (
     <section id="MainPage" style={parentStyle}>
-      <div style={overLay}>
+      <div style={overLay} className="">
         <NavBar />
-        <div className="flex items-start justify-center h-screen mx-10 text-white ">
-          <div
-            className=" flex flex-col  mt-[300px] xl:items-center md:items-center"
-            dir="rtl"
-          >
-            <span className=" text-2xl">
+        <div
+          className=" flex flex-col  mt-[300px] xl:items-start xl:max-w-[90%] md:items-start md:max-w-[90%] max-w-[90%] text-white "
+          dir="rtl"
+        >
+          {/* <span className=" text-2xl">
               مرحبا بكم في شركة مداخيل للأصول العقارية
-            </span>
-            <br />
-            <h1 className="text-6xl font-semibold  xl:items-center md:items-center sm:items-end  text-wrap">
-              مداخيل مرجعك للتقييم العقاري
-            </h1>
-            <br />
-            <p className="flex flex-col  mt-5 xl:items-center md:items-center sm:items-end">
-              <span className="text-justify">
-                المملكة العربية السعودية ذات تاريخ عريق قديم الأزل قدمها
-                وعراقتها لا تلغي أنها تتمتع بتطور وحداثة وتجدد يقوم على رؤية
-                واضحة تعكس
-              </span>
-              مقوماتها المتعددة الاقتصادية والبيئية والثروات النفطية و التقدم
-              العمراني والسكاني
-            </p>
+            </span> */}
+
+          <h1 className="text-6xl font-semibold  xl:items-center md:items-center sm:items-end  text-wrap">
+            مداخيل مرجعك للتقييم العقاري
+          </h1>
+          <br />
+          <p className="flex flex-col mt-5 sm:items-end xl:max-w-[1000px] md:max-w-[1000px] xl:text-justify">
+            المملكة العربية السعودية ذات تاريخ عريق قديم الأزل قدمها وعراقتها لا
+            تلغي أنها تتمتع بتطور وحداثة وتجدد يقوم على رؤية واضحة تعكس مقوماتها
+            المتعددة الاقتصادية والبيئية والثروات النفطية و التقدم العمراني
+            والسكاني
+          </p>
+          <div className="flex mt-8 gap-5">
+            <button className="bg-brand-blue px-8 py-3 rounded-full border-brand-blue border-2 hover:bg-transparent transition-all">
+              أكتشف الان
+            </button>
+            <button className="bg-brand-blue px-8 py-3 rounded-full border-brand-blue border-2 hover:bg-transparent transition-all">
+              أتصل بنا
+            </button>
           </div>
         </div>
       </div>
