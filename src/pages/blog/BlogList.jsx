@@ -4,10 +4,12 @@ import { useEffect, useState } from "react";
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
+  const spaceId = import.meta.env.VITE_SPACE_ID;
+  const apiKey = import.meta.env.VITE_API_KEY;
 
   const client = createClient({
-    space: "zba2opc99q87",
-    accessToken: "D7zaxWWS4xhueH_ZbDhK3UjTOmCWZM5sVPPLVXdV_IU",
+    space: spaceId,
+    accessToken: apiKey,
   });
 
   useEffect(() => {
