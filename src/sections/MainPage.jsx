@@ -21,28 +21,24 @@ const MainPage = () => {
     <section id="MainPage" style={parentStyle}>
       <div style={overLay}>
         <NavBar />
-        <div className="flex items-start justify-center h-screen mx-10 text-white ">
-          <div
-            className=" flex flex-col  mt-[300px] xl:items-center md:items-center"
-            dir="rtl"
-          >
-            <span className=" text-2xl">
-              مرحبا بكم في شركة مداخيل للأصول العقارية
-            </span>
-            <br />
-            <h1 className="text-6xl font-semibold  xl:items-center md:items-center sm:items-end  text-wrap">
-              مداخيل مرجعك للتقييم العقاري
-            </h1>
-            <br />
-            <p className="flex flex-col  mt-5 xl:items-center md:items-center sm:items-end">
-              <span className="text-justify">
-                المملكة العربية السعودية ذات تاريخ عريق قديم الأزل قدمها
-                وعراقتها لا تلغي أنها تتمتع بتطور وحداثة وتجدد يقوم على رؤية
-                واضحة تعكس
-              </span>
-              مقوماتها المتعددة الاقتصادية والبيئية والثروات النفطية و التقدم
-              العمراني والسكاني
-            </p>
+        <div
+          className="flex flex-col gap-5 text-white  justify-center items-center mt-[200px] max-w-[95%] xl:max-w-[95%] xl:mt-[200px] md:max-w-[95%] md:mt-[200px] xl:justify-center xl:items-start md:items-center "
+          dir="rtl"
+        >
+          <h1 className="text-6xl font-semibold xl:items-center md:items-center sm:items-end text-wrap ">
+            مداخيل مرجعك للتقييم العقاري
+          </h1>
+          <p className="flex flex-col  mt-5 xl:items-center md:items-center sm:items-end max-w-[800px] text-justify text-wrap">
+            المملكة العربية السعودية ذات تاريخ عريق قديم الأزل قدمها وعراقتها لا
+            تلغي أنها تتمتع بتطور وحداثة وتجدد يقوم على رؤية واضحة تعكس مقوماتها
+            المتعددة الاقتصادية والبيئية والثروات النفطية و التقدم العمراني
+            والسكاني
+          </p>
+          <div className="flex gap-3">
+            <button className="bg-brand-blue px-7 py-3 rounded-full border-2 border-brand-blue hover:bg-transparent transition-colors">
+              اكتشف الان
+            </button>
+            <button className="">اتصل بنا</button>
           </div>
         </div>
       </div>
