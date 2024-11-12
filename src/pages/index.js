@@ -1,7 +1,6 @@
 export { default as Home } from "./Home.jsx";
 export { default as OrderNow } from "./OrderNow.jsx";
 export { default as OurOffers } from "./OurOffers.jsx";
-export { default as Blog } from "./Blog.jsx";
 export { default as DevWork } from "./DevWork.jsx";
 export { default as ManageServices } from "./ManageServices.jsx";
 export { default as AccountantServices } from "./AccountantServices.jsx";
@@ -10,3 +9,5 @@ export { default as Auctions } from "./Auctions.jsx";
 export { default as Advice } from "./Advice.jsx";
 export { default as Markting } from "./Markting.jsx";
 export { default as Rating } from "./Rating.jsx";
+export { default as BlogList } from "./blog/BlogList.jsx";
+export { default as BlogPage } from "./blog/BlogPage.jsx";

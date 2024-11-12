@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   Home,
-  Blog,
   OrderNow,
   OurOffers,
   DevWork,
@@ -13,6 +12,8 @@ import {
   Advice,
   Markting,
   Rating,
+  BlogList,
+  BlogPage,
 } from "./pages";
 
 const App = () => {
@@ -101,6 +102,23 @@ const App = () => {
           element={
             <div>
               <Rating />
+            </div>
+          }
+        />
+
+        <Route
+          path="/BlogPage/:id"
+          element={
+            <div>
+              <BlogPage />
+            </div>
+          }
+        />
+        <Route
+          path="/BlogList"
+          element={
+            <div>
+              <BlogList />
             </div>
           }
         />

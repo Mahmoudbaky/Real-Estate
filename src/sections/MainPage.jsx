@@ -9,7 +9,6 @@ const MainPage = () => {
     backgroundSize: "cover", // Adjust as needed (cover, contain, etc.)
     backgroundColor: "black", // Fallback color if the image doesn't load
     minHeight: "100vh", // Ensure the background covers the entire viewport
-    // // opacity: 0.9, // Adjust the opacity of the background image
   };
 
   const overLay = {
