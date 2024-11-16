@@ -3,7 +3,6 @@ import { createClient } from "contentful";
 import { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar";
 import BlogCard from "../../components/BlogCard";
-import { h1 } from "framer-motion/client";
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
@@ -52,9 +51,14 @@ const BlogList = () => {
         {/* the list */}
         <div
           id="blog-list"
-          className="text-black min-h-[300px] max-w-[80%] flex flex-col justify-center mx-auto"
+          className="text-black max-w-[80%] flex flex-col justify-center mx-auto"
+          dir="rtl"
         >
-          <div className="px-[100px] text-black flex flex-col gap-3"></div>
+          <div className="px-[100px] text-black flex flex-col gap-3">
+            {posts?.items?.map((post) => {
+              return <BlogCard key={post.sys.id} post={post} />;
+            })}
+          </div>
         </div>
       </div>
     </div>
