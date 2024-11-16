@@ -3,6 +3,7 @@ import { createClient } from "contentful";
 import { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar";
 import BlogCard from "../../components/BlogCard";
+import { h1 } from "framer-motion/client";
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
@@ -13,24 +14,6 @@ const BlogList = () => {
     space: spaceId,
     accessToken: apiKey,
   });
-
-  // const blogs = [
-  //   {
-  //     id: 1,
-  //     title: "Blog Post 1",
-  //     excerpt: "This is a summary of Blog Post 1.",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Blog Post 2",
-  //     excerpt: "This is a summary of Blog Post 2.",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Blog Post 3",
-  //     excerpt: "This is a summary of Blog Post 3.",
-  //   },
-  // ];
 
   useEffect(() => {
     const getAllEntries = async () => {
@@ -46,11 +29,7 @@ const BlogList = () => {
     getAllEntries();
   }, []);
 
-  console.log(
-    posts?.items?.map((post) => {
-      console.log(post);
-    })
-  );
+  // console.log(posts);
 
   return (
     <div className="text-white pure">
@@ -69,20 +48,13 @@ const BlogList = () => {
             </div>
           </div>
         </div>
+
         {/* the list */}
         <div
           id="blog-list"
-          className="text-black min-h-[300px] max-w-[80%] flex flex-col justify-center mx-auto "
+          className="text-black min-h-[300px] max-w-[80%] flex flex-col justify-center mx-auto"
         >
-          <div className="px-[100px] text-black flex flex-col gap-3">
-            <div id="post-card" className="text-black border-8">
-              {posts?.items?.map((post) => {
-                <div className="text-black" key={post.sys.id}>
-                  <h1 className="text-white">{post.fields.blogTitle}</h1>
-                </div>;
-              })}
-            </div>
-          </div>
+          <div className="px-[100px] text-black flex flex-col gap-3"></div>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className="h-[80px] flex flex-row-reverse justify-between w-full items-center text-white py-14 border-b-[1px] border-gray-800 px-8 bg-transparent md:px-32 z-10 drop-shadow-md"
+      className="h-[80px] flex  flex-row-reverse justify-between w-full items-center text-white py-14 border-b-[1px] border-gray-800 px-8 bg-transparent md:px-32 z-10 drop-shadow-md"
       dir="rtl"
     >
       <i
