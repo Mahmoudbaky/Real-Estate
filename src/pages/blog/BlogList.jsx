@@ -51,10 +51,10 @@ const BlogList = () => {
         {/* the list */}
         <div
           id="blog-list"
-          className="text-black max-w-[80%] flex flex-col justify-center mx-auto"
+          className="text-black max-w-[80%] flex flex-col justify-center mx-auto container p-4"
           dir="rtl"
         >
-          <div className="px-[100px] text-black flex flex-col gap-3">
+          <div className=" text-black grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
             {posts?.items?.map((post) => {
               return <BlogCard key={post.sys.id} post={post} />;
             })}
