@@ -28,8 +28,6 @@ const BlogList = () => {
     getAllEntries();
   }, []);
 
-  // console.log(posts);
-
   return (
     <div className="text-white pure">
       <NavBar />

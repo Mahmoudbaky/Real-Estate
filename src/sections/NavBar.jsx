@@ -19,11 +19,11 @@ const NavBar = () => {
 
   return (
     <nav
-      className="h-[80px] flex  flex-row-reverse justify-between w-full items-center text-white py-14 border-b-[1px] border-gray-800 px-8 bg-transparent md:px-32 z-10 drop-shadow-md"
+      className="h-[80px] flex  flex-row-reverse justify-between w-full items-center text-black py-14 border-b-[1px] border-gray-800 px-8 bg-transparent md:px-32 z-10 drop-shadow-md"
       dir="rtl"
     >
       <i
-        className="xl:hidden block text-5xl cursor-pointer"
+        className="xl:hidden block text-5xl cursor-pointer text-white"
         onClick={() => setIsOpen(!isOpen)}
       >
         <RxHamburgerMenu />
@@ -67,14 +67,14 @@ const NavBar = () => {
       </div>
 
       <ul
-        className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base "
+        className="hidden xl:flex xl:flex-row-reverse items-center gap-12 font-semibold text-base text-white"
         dir="rtl"
       >
-        {/* <Link to="#Blog" smooth>
+        <Link to="/BlogList" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             بلوج
           </li>
-        </Link> */}
+        </Link>
         <Link to="#AboutUs" smooth>
           <li className="p-3 hover:bg-[#2cc3c3] hover:text-white rounded-md transition-all cursor-pointer">
             اتصل بنا

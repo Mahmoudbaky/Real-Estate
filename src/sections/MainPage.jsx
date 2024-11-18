@@ -21,7 +21,7 @@ const MainPage = () => {
       <div style={overLay} className="">
         <NavBar />
         <div
-          className=" flex flex-col  mt-[300px] xl:items-start xl:max-w-[90%] md:items-start md:max-w-[90%] max-w-[90%] text-white "
+          className=" flex flex-col  mt-[250px] xl:items-start xl:max-w-[90%] md:items-start md:max-w-[90%] max-w-[90%] text-white "
           dir="rtl"
         >
           {/* <span className=" text-2xl">
