@@ -50,7 +50,7 @@ const NavBar = () => {
             خدماتنا
           </li>
         </Link>
-        <Link to="#AbourUs" smooth>
+        <Link to="#AboutUs" smooth>
           <li className="list-none w-[250px] text-center p-4 hover:bg-[#2cc3c3] hover:text-white transition-all cursor-pointer rounded-md">
             من نحن
           </li>

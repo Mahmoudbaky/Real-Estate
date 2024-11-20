@@ -1,6 +1,7 @@
 import React from "react";
 import luxury_home from "../assets/luxury_home.jpg";
 import { NavBar } from "../sections";
+import { motion } from "framer-motion";
 
 const MainPage = () => {
   const parentStyle = {
@@ -20,7 +21,10 @@ const MainPage = () => {
     <section id="MainPage" style={parentStyle}>
       <div style={overLay} className="">
         <NavBar />
-        <div
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
           className=" flex flex-col  mt-[250px] xl:items-start xl:max-w-[90%] md:items-start md:max-w-[90%] max-w-[90%] text-white "
           dir="rtl"
         >
@@ -46,7 +50,7 @@ const MainPage = () => {
               أتصل بنا
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
