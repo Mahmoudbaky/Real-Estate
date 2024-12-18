@@ -127,4 +127,8 @@ const App = () => {
   );
 };
 
+{
+  /* comment */
+}
+
 export default App;
