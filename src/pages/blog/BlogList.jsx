@@ -9,8 +9,6 @@ const BlogList = () => {
   const spaceId = import.meta.env.VITE_SPACE_ID;
   const apiKey = import.meta.env.VITE_API_KEY;
 
-  console.log(import.meta.env);
-
   const client = createClient({
     space: spaceId,
     accessToken: apiKey,
